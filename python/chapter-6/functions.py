@@ -50,3 +50,22 @@ def show(n):
     show(n - 1)
 
 show(5)
+
+def calc_sum(n):
+    if(n==0):
+        return
+    print(n)
+    calc_sum(n-1) + n
+    
+
+calc_sum(5)    
+
+
+def print_list(list , idx):
+    if idx == len(list):
+        return
+    print(list[idx])
+    print_list(list , idx + 1)
+
+
+print_list([1,2,3,4,5] , 0)    
