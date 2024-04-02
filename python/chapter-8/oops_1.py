@@ -18,8 +18,8 @@ s1.hello()
 
 class Car:
     def __init__(self):
-        self.acc = False
-        self.brk = False
+        self.acc = False # attribute
+        self.brk = False 
         self.clutch = False
     def start(self):
         self.clutch = True
