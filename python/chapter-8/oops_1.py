@@ -1,23 +1,11 @@
 class Student:
-    def __init__(self , fullname):
-        self.name=fullname
-        print(self.name,"Created")
-   
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+    def get_avg(self):
+        print(sum(self.marks)/len(self.marks))    
+ 
 
-s1=Student("Suraj")
-# s2=Student()
-print(s1.name)
-# print(s2.name)    
+s1 = Student('John', [45, 67, 89, 90, 78])        
 
-
-# class Car:
-#     color="Red"
-#     brand="BMW"
-#     engine="V8"
-    
-    
-    
-# c1 = Car()
-# c2 = Car()
-# print(c1.color)
-# print(c2.color)    
+s1.get_avg()
